@@ -10,7 +10,7 @@ app.use("/audio", express.static("./public/audio"));
 
 app.get("/atmospheric", (req, res) => {
   res.json({
-    id: "8b413a9c-ad21-42d3-a992-34b930312643",
+    id: "1",
     name: "atmospheric",
     bass: `${url}:${PORT}/audio/atmospheric-bass.wav`,
     pad1: `${url}:${PORT}/audio/atmospheric-pad1.wav`,
@@ -20,6 +20,21 @@ app.get("/atmospheric", (req, res) => {
     lead2: `${url}:${PORT}/audio/atmospheric-lead2.wav`,
     lead3: `${url}:${PORT}/audio/atmospheric-lead3.wav`,
     drone: `${url}:${PORT}/audio/atmospheric-drone.wav`,
+  });
+});
+
+app.get("/hyacintho", (req, res) => {
+  res.json({
+    id: "2",
+    name: "atmospheric",
+    bass: `${url}:${PORT}/audio/hyacintho-bass.wav`,
+    pad1: `${url}:${PORT}/audio/hyacintho-pad1.wav`,
+    pad2: `${url}:${PORT}/audio/hyacintho-pad2.wav`,
+    arp: `${url}:${PORT}/audio/hyacintho-arp.wav`,
+    lead1: `${url}:${PORT}/audio/hyacintho-lead1.wav`,
+    lead2: `${url}:${PORT}/audio/hyacintho-lead2.wav`,
+    lead3: `${url}:${PORT}/audio/hyacintho-lead3.wav`,
+    drone: `${url}:${PORT}/audio/hyacintho-drone.wav`,
   });
 });
 
