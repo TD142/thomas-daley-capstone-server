@@ -3,6 +3,14 @@ const router = express.Router();
 const PORT = 8080;
 const url = process.env.API_URI;
 
+router.get("/", (req, res) => {
+  res
+    .status(200)
+    .send(
+      "Welcome! Please use /atmospheric or /hyacintho to retrieve audio files."
+    );
+});
+
 router.get("/atmospheric", (req, res) => {
   res.status(200).json({
     id: "1",
