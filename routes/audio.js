@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const PORT = 8080;
-const url = "http://localhost";
+const url = process.env.API_URI;
 
 router.get("/atmospheric", (req, res) => {
   res.status(200).json({
