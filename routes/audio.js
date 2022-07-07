@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const PORT = 8080;
-const url = process.env.API_URI;
+const url = process.env.API_URI || 8080;
 
 router.get("/", (req, res) => {
   res
